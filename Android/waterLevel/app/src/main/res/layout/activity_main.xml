@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water Level"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:id="@+id/staticText"
+        android:paddingTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100%"
+        android:paddingTop="50dp"
+        android:layout_alignTop="@+id/staticText"
+        android:layout_centerHorizontal="true"
+        android:textSize="100dp"
+        android:textColor="#00FF00"
+        android:id="@+id/value"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Motor"
+        android:layout_alignTop="@+id/value"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
